@@ -48,7 +48,7 @@ const About = () => {
         className='mt-4 text-thertiary text-[17px] max-w-3xl leading-[30px]'
       >
         I'm a skilled software developer with experience in many programing languges C# C++ js ts css html ...
-          and expertise in frameworks like React, Node.js, and
+          and expertise in frameworks like React, and
          I'm a quick learner and collaborate closely with web Design Agencies and D2C to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life!
