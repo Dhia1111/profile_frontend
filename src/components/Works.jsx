@@ -76,7 +76,12 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+       <div className="flex flex-row items-center content-start"> 
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>   
+        <span className='hash-span' id="projects"></span>
+        </div>
+
+
       </motion.div>
 
       <div className='w-full flex'>
@@ -101,4 +106,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

@@ -19,6 +19,7 @@
     "react-dom": "^19.1.0",
     "react-parallax-tilt": "^1.7.304",
     "react-router-dom": "^7.7.1",
+    "react-router-hash-link": "^2.4.3",
     "react-vertical-timeline-component": "^3.5.3",
     "tailwindcss": "^4.1.11"
   },

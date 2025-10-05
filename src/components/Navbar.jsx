@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -34,6 +35,7 @@ const Navbar = () => {
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      
         <Link
           to='/'
           className='flex items-center gap-2'
@@ -44,12 +46,21 @@ const Navbar = () => {
         >
           <img src={logo} alt='logo' className='w-10 h-10 rounded-full  object-contain ' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Dhia &nbsp;
-            <span className='sm:block hidden'> | BackEnd Mastery</span>
+            SoftWareLink &nbsp;
+            <span className='sm:block hidden'> | Get the right tech </span>
           </p>
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+      
+   
+      
+         <li className={`${
+                active === "services" ? "text-thertiary " : "text-thertiary text-[15px]"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}>       <a
+  href={`/SiteSetupChoicesForEntrepreneursPracticalGuide.pdf`}download="Website_Platform_Comparison_Full.pdf"rel="noopener noreferrer">
+  Tech Setups PDF
+              </a></li>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -58,9 +69,17 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <HashLink to={`/#${nav.id}`}>{nav.title}</HashLink>
+
             </li>
           ))}
+         <li className={`${
+                active === "services" ? "text-thertiary " : "text-thertiary text-[15px]"
+              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              onClick={() => setActive("services")}
+            ><HashLink to={`services`}>Services</HashLink></li>
+
+
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
