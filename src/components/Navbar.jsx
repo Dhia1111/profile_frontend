@@ -47,7 +47,7 @@ const Navbar = () => {
           <img src={logo} alt='logo' className='w-10 h-10 rounded-full  object-contain ' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
             SoftWareLink &nbsp;
-            <span className='sm:block hidden'> | Get the right tech </span>
+            <Link to="/"  className='sm:block hidden'> | Get the right tech </Link>
           </p>
         </Link>
 
@@ -98,7 +98,7 @@ const Navbar = () => {
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
          <li className={`${
                 active === "services" ? "text-thertiary " : "text-thertiary text-[15px]"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}>       <a
+              } hover:text-white text-[18px] font-medium cursor-pointer`}>       <a 
   href={`/SiteSetupChoicesForEntrepreneursPracticalGuide.pdf`}download="Website_Platform_Comparison_Full.pdf"rel="noopener noreferrer">
   Tech Setups PDF
               </a></li>
@@ -110,7 +110,7 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <HashLink to={`/#${nav.id}`}>{nav.title}</HashLink>
+              <HashLink  to={`/#${nav.id}`} >{nav.title}</HashLink>
 
             </li>
           ))}

@@ -46,18 +46,26 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
+    link:"Web_development"
+
   },
   {
     title: ".NetCore Development",
     icon: mobile,
+        link:"ASP.NET_Core"
+
   },
   {
     title: "Backend Developer",
     icon: backend,
+        link:"Software_development"
+
   },
   {
     title: "Services Integrations",
     icon: Services,
+        link:"Software_development"
+
   },
 ];
 
