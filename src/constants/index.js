@@ -19,7 +19,7 @@ import {
   Securty,
   carrent,
   jobit,
-  threejs,
+  threejs,HRM
 } from "../assets";
 
 export const navLinks = [
@@ -218,7 +218,29 @@ const projects = [
     
     ],
     image: jobit,
-    source_code_link: "https://github.com/Dhia1111/ecommerce_backend1_with_postgre_sql",
+    source_code_link: "https://github.com/Dhia1111",
+  },
+  {
+    name: "HRM",
+    description:"Human resource management system build on two Different technology  Web/DeskTop "
+    , tags: [
+      {
+        name: "react",
+        color: "bg-gradient-to-r from-blue-500 to-blue-700",
+      },
+      {
+        name: "Asp.net Core",
+        color: "bg-gradient-to-r from-green-500 to-green-700",
+      },
+      {
+        name: ".Net FramWork",
+        color: "bg-gradient-to-r from-green-500 to-green-700",
+      },
+        
+    
+    ],
+    image: HRM,
+    source_code_link: "https://github.com/Dhia1111/",
   },
  
 ];
